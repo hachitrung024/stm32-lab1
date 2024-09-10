@@ -18,11 +18,11 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <ex7.h>
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "ex6.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -91,10 +91,10 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  ex6_init();
+  ex7_init();
   while (1)
   {
-	  ex6_run();
+	  ex7_run();
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
