@@ -4,16 +4,26 @@
  *  Created on: Sep 10, 2024
  *      Author: hachi
  */
-#include <ex9.h>
+#include <ex10.h>
 
-int counter;
-void ex9_init(){
-	counter =0;
+unsigned int hour, min, sec;
+void ex10_init(){
+	hour =0;
+	min = 0;
+	sec = 0;
+	clearAllClock();
 }
-void ex9_run(){
-	if(counter >=12) counter =0;
-	clearNumberOnClock(counter);
-	counter++;
+void ex10_run(){
+	  if(sec>=60){sec=0; min++;}
+	  if(min>=60) {min=0;hour++;}
+	  if(hour>=12) hour=0;
+	  if(sec%5==0 ){
+		  clearAllClock();
+	  	  setNumberOnClock(sec/5);
+	  	  setNumberOnClock(min/5);
+	  	  setNumberOnClock(hour);
+	  }
+	  sec++;
 }
 
 void clearAllClock(){

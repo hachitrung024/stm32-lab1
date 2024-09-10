@@ -18,7 +18,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include <ex9.h>
+#include <ex10.h>
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -91,10 +91,10 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  ex9_init();
+  ex10_init();
   while (1)
   {
-	  ex9_run();
+	  ex10_run();
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
