@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "ex4.h"
+#include "ex5.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -91,10 +91,10 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  ex4_init();
+  ex5_init();
   while (1)
   {
-	  ex4_run();
+	  ex5_run();
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 

@@ -5,13 +5,13 @@
  *      Author: hachi
  */
 
-#ifndef INC_EX4_H_
-#define INC_EX4_H_
+#ifndef INC_EX5_H_
+#define INC_EX5_H_
 
 #include "main.h"
 
 void display7SEG(int num);
-void ex4_init();
-void ex4_run();
+void ex5_init();
+void ex5_run();
 
-#endif /* INC_EX4_H_ */
+#endif /* INC_EX5_H_ */
