@@ -1,3 +1,4 @@
-ex7.c:10:6:ex7_init	8	static
-ex7.c:14:6:ex7_run	8	static
-ex7.c:20:6:clearAllClock	8	static
+ex7.c:10:6:ex8_init	8	static
+ex7.c:14:6:ex8_run	8	static
+ex7.c:21:6:clearAllClock	8	static
+ex7.c:37:6:setNumberOnClock	16	static

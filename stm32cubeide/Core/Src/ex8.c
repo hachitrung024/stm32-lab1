@@ -4,16 +4,17 @@
  *  Created on: Sep 10, 2024
  *      Author: hachi
  */
-#include <ex7.h>
+#include <ex8.h>
 
 int counter;
-void ex7_init(){
+void ex8_init(){
 	clearAllClock();
 	counter =0;
 }
-void ex7_run(){
-	if(counter>=12) {counter =0;clearAllClock();};
-	HAL_GPIO_TogglePin(GPIOA, LED0_Pin<< counter);
+void ex8_run(){
+	if(counter >=12) counter =0;
+	clearAllClock();
+	setNumberOnClock(counter);
 	counter++;
 }
 
@@ -31,4 +32,8 @@ void clearAllClock(){
 	HAL_GPIO_WritePin(GPIOA, LED10_Pin, SET);
 	HAL_GPIO_WritePin(GPIOA, LED11_Pin, SET);
 
+}
+
+void setNumberOnClock(int num){
+	HAL_GPIO_WritePin(GPIOA, LED0_Pin << num, RESET);
 }
