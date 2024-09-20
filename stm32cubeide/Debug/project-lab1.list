@@ -85,17 +85,17 @@ unsigned int hour, min, sec;
 void ex10_init(){
  800014c:	b580      	push	{r7, lr}
  800014e:	af00      	add	r7, sp, #0
-	hour =0;
+	hour =11;
  8000150:	4b06      	ldr	r3, [pc, #24]	; (800016c <ex10_init+0x20>)
- 8000152:	2200      	movs	r2, #0
+ 8000152:	220b      	movs	r2, #11
  8000154:	601a      	str	r2, [r3, #0]
-	min = 0;
+	min = 59;
  8000156:	4b06      	ldr	r3, [pc, #24]	; (8000170 <ex10_init+0x24>)
- 8000158:	2200      	movs	r2, #0
+ 8000158:	223b      	movs	r2, #59	; 0x3b
  800015a:	601a      	str	r2, [r3, #0]
-	sec = 0;
+	sec = 30;
  800015c:	4b05      	ldr	r3, [pc, #20]	; (8000174 <ex10_init+0x28>)
- 800015e:	2200      	movs	r2, #0
+ 800015e:	221e      	movs	r2, #30
  8000160:	601a      	str	r2, [r3, #0]
 	clearAllClock();
  8000162:	f000 f85f 	bl	8000224 <clearAllClock>

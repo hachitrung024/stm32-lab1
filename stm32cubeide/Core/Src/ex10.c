@@ -8,9 +8,9 @@
 
 unsigned int hour, min, sec;
 void ex10_init(){
-	hour =0;
-	min = 0;
-	sec = 0;
+	hour =11;
+	min = 59;
+	sec = 30;
 	clearAllClock();
 }
 void ex10_run(){
